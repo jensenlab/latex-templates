@@ -1,0 +1,71 @@
+\documentclass{jlpaper}
+
+
+\usepackage{tikz}
+\usepackage{lipsum}
+
+\title{Sample Paper Title}
+\author{Jane~C. Doe\textsuperscript{1,2}, John~C. Doe\textsuperscript{1}\footnote{Correspondence to \email{john@doe.com}.}}
+\affiliation{{}$^1$Department of Nothing, $^2$Institute of Nothingness, University of Somewhere, Somewhere, ND 58103}
+
+
+\begin{document}
+
+% ==================== Main Text ====================
+
+\maketitle
+
+\begin{abstract}
+	\lipsum[1-2]	
+\end{abstract}
+
+\section{Introduction}
+
+\lipsum[3-6]
+
+\section{Results}
+
+\lipsum[7-12]
+
+\begin{figure}
+	\begin{center}
+		\begin{tikzpicture} \draw[blue] (0,0) rectangle (2,2); \end{tikzpicture}
+	\end{center}
+	\caption{A figure in the main text.}\label{fig:main-text}
+\end{figure}
+
+
+\section{Discussion}
+
+\lipsum[13-15]
+
+\section{Methods}
+
+\lipsum[16-20]
+
+
+% ==================== Supplementary Material ====================
+\supplement
+
+\section{Section title}
+
+\begin{figure}[h]
+	\begin{center}
+		\begin{tikzpicture} \draw[red] (0,0) rectangle (2,2); \end{tikzpicture}
+	\end{center}
+	\caption{A figure in the supplementary text.}\label{fig:supp-text}
+\end{figure}
+
+
+% ==================== Response to Reviewers ====================
+\response
+
+\reviewer1
+
+\begin{critique}
+	\lipsum[21]	
+\end{critique}
+
+Our response is \lipsum[22-23]
+	
+\end{document}
