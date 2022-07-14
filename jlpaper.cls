@@ -21,7 +21,6 @@
 
 \newcommand\email[1]{\texttt{#1}}
 
-%\makeatletter
 \newcommand\affiliation[1]{\gdef\@affiliation{#1}}
 \renewcommand\maketitle{%
 	\begin{center}
@@ -44,8 +43,6 @@
 		{\small \@affiliation}
 	\end{center}
 }
-%\makeatother
-
 
 \newcommand\beginsupplement{
 	\clearpage
